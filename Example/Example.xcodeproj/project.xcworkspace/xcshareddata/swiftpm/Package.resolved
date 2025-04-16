@@ -1,0 +1,15 @@
+{
+  "originHash" : "b67929df969b1a966c5750a43d477917ebf4159df0c2733b84f74e3aa8d4374e",
+  "pins" : [
+    {
+      "identity" : "extensionios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alisheikh1122/ExtensionIOS.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3eaf48b32131250d4208f45399fe29f3b47d7938"
+      }
+    }
+  ],
+  "version" : 3
+}

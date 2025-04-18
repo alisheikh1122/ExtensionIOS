@@ -61,6 +61,41 @@ extension UIView {
 }
 @IBDesignable
 extension UIButton {
+    @IBInspectable var FontNameb: String? {
+        get {
+            return self.titleLabel?.font.fontName
+        }
+        set {
+            if let fontName = newValue, let fontSize = self.titleLabel?.font.pointSize {
+                self.titleLabel?.font = UIFont(name: fontName, size: fontSize)
+            }
+        }
+    }
+    @IBInspectable var FontSizeb: CGFloat {
+        get {
+            return self.titleLabel?.font.pointSize ?? 0
+        }
+        set {
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                setFontSize(newValue)
+            }
+        }
+    }
+    @IBInspectable var iPadFontSizeb: CGFloat {
+        get {
+            return self.titleLabel?.font.pointSize ?? 0
+        }
+        set {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                setFontSize(newValue)
+            }
+        }
+    }
+    private func setFontSize(_ size: CGFloat) {
+        if let fontName = self.titleLabel?.font.fontName {
+            self.titleLabel?.font = UIFont(name: fontName, size: size)
+        }
+    }
     /// Adjusts the corner radius for iPhone devices only
     @IBInspectable var cornerRadiusb: CGFloat {
         get { layer.cornerRadius }

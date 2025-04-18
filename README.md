@@ -19,7 +19,7 @@ You can install **ExtensionIOS** using Swift Package Manager:
 
 1. Open Xcode → File → Add Packages...
 2. Paste the URL of your repo: 
-https://github.com/your-username/ExtensionIOS.git
+https://github.com/alisheikh1122/ExtensionIOS.git
 3. Add to your project and select the appropriate target.
 
 ---
